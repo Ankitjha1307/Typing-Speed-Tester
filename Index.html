@@ -7,9 +7,11 @@
 </head>
 <body>
     <h1>Typing Speed Tester</h1>
-    <h3>Test your typing speed and improve your skills!</h3>
-    <button id="startButton">Start Test</button>
-
+    <div id="initial">
+        <h3>Test your typing speed and improve your skills!</h3>
+        <button id="startButton" onclick="startTypingTest()">Start Test</button>
+    </div>
+    
     <div id="testStarted" style="display: none;">
         <div id="instructions">
         <p>Type the text below as quickly and accurately as you can:</p>
@@ -19,16 +21,19 @@
         <input type="text" id="userInput" placeholder="Start typing..." />
 
         <div id="buttons">
-            <button id="resetButton">Reset</button>
-            <button id="submitButton">Submit</button>
+            <button id="resetButton" onclick="resetTypingTest()">Reset</button>
+            <button id="submitButton" onclick="showResults()">Submit</button>
+            <button id="endButton" onclick="endTypingTest()">End Test</button>
         </div>
     </div>
 
     <div id="results" style="display: none;">
         <h2>Results</h2>
-        <p id="timeTaken"></p>
         <p id="accuracy"></p>
         <p id="wpm"></p>
+        <p id="mistakes"></p>
+        <button id="restartButton" onclick="restartTypingTest()">Restart Test</button>
     </div>
+    <script src="App.js"></script>
 </body>
 </html>
