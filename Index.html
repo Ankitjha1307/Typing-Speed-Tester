@@ -3,9 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Typing Speed Tester</title>
 </head>
 <body>
-    
+    <h1>Typing Speed Tester</h1>
+    <h3>Test your typing speed and improve your skills!</h3>
+    <button id="startButton">Start Test</button>
+
+    <div id="testStarted" style="display: none;">
+        <div id="instructions">
+        <p>Type the text below as quickly and accurately as you can:</p>
+        <p id="sampleText">The quick brown fox jumps over the lazy dog.</p>
+        </div>
+
+        <input type="text" id="userInput" placeholder="Start typing..." />
+
+        <div id="buttons">
+            <button id="resetButton">Reset</button>
+            <button id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <div id="results" style="display: none;">
+        <h2>Results</h2>
+        <p id="timeTaken"></p>
+        <p id="accuracy"></p>
+        <p id="wpm"></p>
+    </div>
 </body>
 </html>
