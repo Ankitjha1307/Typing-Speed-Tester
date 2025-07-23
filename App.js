@@ -1,3 +1,22 @@
+   const sampleSentences = [
+     "The quick brown fox jumps over the lazy dog.",
+     "Typing is a skill that improves with practice.",
+     "JavaScript is a powerful language for web development.",
+     "She sells seashells by the seashore.",
+     "The rain in Spain stays mainly in the plain.",
+     "Every expert was once a beginner.",
+     "Keep calm and code on.",
+     "Practice makes perfect in everything you do.",
+     "Success is the sum of small efforts repeated daily.",
+     "A journey of a thousand miles begins with a single step."
+];
+
+function getRandomSentence() {
+    const randomIndex = Math.floor(Math.random()*sampleSentences.length);
+    let randomSentence = sampleSentences[randomIndex];
+    document.getElementById("sampleText").innerText = randomSentence;
+}
+    
     const startButton = document.getElementById("startButton");
     const testStarted = document.getElementById("testStarted");
     const restartbutton = document.getElementById("restartButton");
@@ -9,6 +28,9 @@
     const mistakes = document.getElementById("mistakes");
 
     let startTime, endTime;
+    let timerInterval;
+    let secondsElapsed = 0;
+
     
     function startTypingTest() {
         initial.style.display = "none";
@@ -17,6 +39,12 @@
         testStarted.style.display = "block";
         userInput.focus();
         startTime= new Date().getTime();
+        getRandomSentence();
+
+        timerInterval = setInterval(() => {
+        secondsElapsed++;
+        document.getElementById("timer").innerText = `Time: ${secondsElapsed}s`;
+        }, 1000);
     }
 
     function endTypingTest() {
@@ -31,6 +59,14 @@
         testStarted.style.display = "block";
         userInput.focus();
         startTime= new Date().getTime();
+
+        clearInterval(timerInterval); 
+        secondsElapsed = 0; 
+        document.getElementById("timer").innerText = `Time: 0s`;
+        timerInterval = setInterval(() => {
+        secondsElapsed++;
+        document.getElementById("timer").innerText = `Time: ${secondsElapsed}s`;
+        }, 1000);
     }
 
     function restartTypingTest() {
@@ -38,6 +74,7 @@
         results.style.display = "none";
         userInput.value = "";
         startButton.style.display = "block";
+        startButton.style.justifySelf= "center";
     }
 
     function showResults() {
@@ -49,7 +86,9 @@
             testStarted.style.display = "none";
             restartbutton.style.display = "block";
             endTime = new Date().getTime();
+            clearInterval(timerInterval);
             displayResults();
+            restartbutton.style.justifySelf = "center";
         }
     }
 
