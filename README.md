@@ -58,9 +58,9 @@ App.js          - JavaScript file containing the logic and interactivity
 
 Preview
 
-![Start](assets/screenshot-start.png)
-![Typing](assets/screenshot-typing.png)
-![Results](assets/screenshot-results.png)
+![Start Screen](Assets/screenshot-start.png)
+![Typing Screen](Assets/screenshot-typing.png)
+![Results Screen](Assets/screenshot-result.png)
 
 How to Run Locally
 
