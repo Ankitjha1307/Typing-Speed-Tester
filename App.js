@@ -146,11 +146,9 @@ function getRandomSentence() {
         for (let i = 0; i < userInput.value.length && i < sampleTextValue.length; i++) {
             if (userInput.value[i] === sampleTextValue[i]) {
                 correctChars++;
-                //userInput.value[i].style.backgroundColor = "lightgreen";
             }
             else{
                 mistakesValue++;
-                //userInput.value[i].style.backgroundColor = "lightcoral";
             }
         }
 
