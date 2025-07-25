@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Typing Speed Tester</title>
 </head>
 <body>
-    <h1>Typing Speed Tester</h1>
+    <h1>Typing Speed Tester <i class="fa-solid fa-keyboard"></i> </h1>
     <div id="initial">
         <h3>Test your typing speed and improve your skills!</h3>
         <button id="startButton" onclick="startTypingTest()">Start Test</button>
@@ -21,7 +22,13 @@
 
         </div>
 
-        <input type="text" id="userInput" placeholder="Start typing..." />
+        <!-- <input type="text" id="userInput" placeholder="Start typing..." /> -->
+        <div class="typingContainer">
+            <textarea id="userInput" ></textarea>
+            <div id="displayText" aria-placeholder="Type here..." >
+            <!-- Styled text will appear here -->
+            </div>
+        </div>
 
         <div id="buttons">
             <button id="resetButton" onclick="resetTypingTest()">Reset</button>
