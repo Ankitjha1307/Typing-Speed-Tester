@@ -56,6 +56,12 @@ App.js          - JavaScript file containing the logic and interactivity
 
 ---
 
+Preview
+
+![Start](assets/screenshot-start.jpg)
+![Typing](assets/screenshot-typing.jpg)
+![Results](assets/screenshot-results.jpg)
+
 How to Run Locally
 
 1. Download or clone the repository:  https://github.com/Ankitjha1307/Typing-Speed-Tester.git
