@@ -154,18 +154,12 @@ button:hover {
 
 .heading {
   font-size: 2rem;
-  max-width: 150px;
+  max-width: 250px;
   font-weight: bold;
   color: #4a148c;
   text-align: center;
   word-wrap: break-word;
 }
-
-.content-box {
-  max-width: 500px; /* Increase from 400px or less */
-  width: 100%;
-}
-
 
 @media (max-width: 768px) {
   .main-container {
