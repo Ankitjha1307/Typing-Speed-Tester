@@ -62,6 +62,8 @@ Preview
 ![Typing Screen](Assets/screenshot-typing.png)
 ![Results Screen](Assets/screenshot-result.png)
 
+---
+
 How to Run Locally
 
 1. Download or clone the repository:  https://github.com/Ankitjha1307/Typing-Speed-Tester.git
@@ -76,6 +78,12 @@ How to Run Locally
 
 No installation or build tools are needed. It runs directly in the browser.
 
+
+---
+
+## 🚀 Live Demo
+Try the project live here:  
+🌐 https://ankitjha1307.github.io/Typing-Speed-Tester/
 
 ---
 
