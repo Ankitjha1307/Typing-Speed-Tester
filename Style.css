@@ -149,7 +149,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .heading {
@@ -160,6 +160,12 @@ button:hover {
   text-align: center;
   word-wrap: break-word;
 }
+
+.content-box {
+  max-width: 500px; /* Increase from 400px or less */
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
   .main-container {
