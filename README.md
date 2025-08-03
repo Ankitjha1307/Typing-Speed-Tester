@@ -49,9 +49,9 @@ Tech Stack
 
 Project Structure
 
-Index.html      - The main HTML file 
-Style.css       - The stylesheet used for layout and UI design 
-App.js          - JavaScript file containing the logic and interactivity
+- Index.html      - The main HTML file 
+- Style.css       - The stylesheet used for layout and UI design 
+- App.js          - JavaScript file containing the logic and interactivity
 
 
 ---
