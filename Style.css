@@ -149,14 +149,20 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 15px;
 }
 
 .heading {
   font-size: 2rem;
+  max-width: 600px;
   font-weight: bold;
   color: #4a148c;
   text-align: center;
+}
+
+.content-box {
+  max-width: 600px; 
+  width: 100%;
 }
 
 @media (max-width: 768px) {
